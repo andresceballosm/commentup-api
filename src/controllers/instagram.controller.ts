@@ -142,8 +142,7 @@ export async function connectInstagramAccount(req: any, res: Response) {
 export async function getAccounts(req: any, res: Response) {
   try {
     //const user = req?.user;
-    const token =
-      "EAAXpru3V8uwBAABFtm5PDm6WmxMBj9qU5e508x4oawGLYOZAI7tYe2LiBFvWVgZC2ltPRsqE2z5CCt3mB9Tw6XLxmCZAGwtjDntz24VSZACTe0tXi71kVZCXsOCmCg5yGfU4ZC1KTAt0xugZCIly1xhaeqdPZAxLUgXlJMkpCNbY9LGxBgGBlJmVZBfDywnYAnTNmSZBNi4ZCHO6fSxJjOYduRC";
+    const token = "";
     const accountsResponse = await GetAccountsService(token);
     return res.status(200).send({
       ok: true,
